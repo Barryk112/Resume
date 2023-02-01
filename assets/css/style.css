@@ -23,6 +23,26 @@
     background-color: #525252;
 }
 
+/* ----------------------------------- Special paddings /margins/text */
+
+h1,
+h2,
+h3, 
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+
 /* ----------------------------------- Heading */
 
 header {
@@ -73,44 +93,52 @@ header {
     margin: 0;
 }
 
- #nav li {
+#nav li {
     font-size: 14px;
     padding: 0;
- }
+}
 
- .menuitem {
+.menuitem {
     height: 120px;
     text-align: center;
     padding: 0;
- }
+}
 
- .menuitem a {
+.menuitem a {
     width: 100%;
     text-decoration: none;
     color: #fff;
     height: 120px;
- }
+}
 
- .menuitem a i {
+.menuitem a i {
     padding-top: 22px;
     display: block;
     color:#fafafa;
     font-size: 26px;
- }
+}
 
- .menuitem span {
+.menuitem span {
     display: block;
     width: 100%;
     padding-top: 5px;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
- }
+}
 
- /* ----------------------------------- Hover.css */
+/* ----------------------------------- Hover.css */
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
- }
- 
+}
+
+/* ----------------------------------- Footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
