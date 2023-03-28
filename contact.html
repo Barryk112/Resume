@@ -12,6 +12,16 @@
 
     <title>Barry Kiely Portfolio</title>
 
+    <!--Email.js link-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("ceq0XCCh_zlOZaGs3");
+    })();
+    </script>
+
 </head>
 
 <body>
@@ -62,7 +72,7 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
                         <textarea rows="5" name="projectsummery" id="projectsummery" class="form-control" placeholder="Project description" required></textarea>
@@ -141,6 +151,7 @@
         </div>
 
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
     
 </body>
 </html>
