@@ -17,7 +17,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-    (function(){
+    (function() {
         emailjs.init("ceq0XCCh_zlOZaGs3");
     })();
     </script>
@@ -73,15 +73,10 @@
 
                 <div class="center-form">
                     <form onsubmit="return sendMail(this);">
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
-                        <textarea rows="5" name="projectsummery" id="projectsummery" class="form-control" placeholder="Project description" required></textarea>
-
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                            </div>
-                        </div>
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
                     </form>
                 </div>
             </div>
